@@ -15,7 +15,7 @@
                         </div>
                         <div class=" me-3 my-3 text-end">
                             <a class="btn bg-gradient-dark mb-0" href="javascript:;"><i
-                                    class="material-icons text-sm">Adicionar</i>&nbsp;&nbsp;novo usuário</a>
+                                    class="material-icons text-sm">add</i>&nbsp;&nbsp;Nova equipe</a>
                         </div>
                         <div class="card-body px-0 pb-2">
                             <div class="table-responsive p-0">
@@ -30,17 +30,20 @@
                                                 class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                                 FOTO</th>
                                             <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                                NOME</th>
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                NOME DA EQUIPE</th>
                                             <th
-                                                class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                EMAIL</th>
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                LOCAL</th>
                                             <th
-                                                class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                FUNÇÃO</th>
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                CAPITÃO</th>
                                             <th
-                                                class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                DATA DE CRIAÇÃO
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                MODALIDADE</th>
+                                            <th
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                HORÁRIO MARCADO
                                             </th>
                                             <th class="text-secondary opacity-7"></th>
                                         </tr>
@@ -83,14 +86,14 @@
                                                 <a rel="tooltip" class="btn btn-success btn-link"
                                                     href="" data-original-title=""
                                                     title="">
-                                                    <i class="material-icons">Editar</i>
-                                                    <div class="ripple-container"></div>
+                                                    <i class="material-icons"></i>
+                                                    <div class="ripple-container">Editar</div>
                                                 </a>
                                                 
                                                 <button type="button" class="btn btn-danger btn-link"
                                                 data-original-title="" title="">
-                                                <i class="material-icons">Fechar</i>
-                                                <div class="ripple-container"></div>
+                                                <i class="material-icons"></i>
+                                                <div class="ripple-container">Fechar</div>
                                             </button>
                                             </td>
                                         </tr>
@@ -131,13 +134,13 @@
                                                 <a rel="tooltip" class="btn btn-success btn-link"
                                                 href="" data-original-title=""
                                                 title="">
-                                                <i class="material-icons">Editar</i>
-                                                <div class="ripple-container"></div>
+                                                <i class="material-icons"></i>
+                                                <div class="ripple-container">Editar</div>
                                             </a>
                                              <button type="button" class="btn btn-danger btn-link"
                                                     data-original-title="" title="">
-                                                    <i class="material-icons">Fechar</i>
-                                                    <div class="ripple-container"></div>
+                                                    <i class="material-icons"></i>
+                                                    <div class="ripple-container">Fechar</div>
                                                 </button>
                                             </td>
                                         </tr>
@@ -178,13 +181,13 @@
                                                 <a rel="tooltip" class="btn btn-success btn-link"
                                                     href="" data-original-title=""
                                                     title="">
-                                                    <i class="material-icons">Editar</i>
-                                                    <div class="ripple-container"></div>
+                                                    <i class="material-icons"></i>
+                                                    <div class="ripple-container">Editar</div>
                                                 </a>
                                                 <button type="button" class="btn btn-danger btn-link"
                                                 data-original-title="" title="">
-                                                <i class="material-icons">Fechar</i>
-                                                <div class="ripple-container"></div>
+                                                <i class="material-icons"></i>
+                                                <div class="ripple-container">Fechar</div>
                                             </button>
                                             </td>
                                         </tr>
@@ -224,13 +227,13 @@
                                                 <a rel="tooltip" class="btn btn-success btn-link"
                                                     href="" data-original-title=""
                                                     title="">
-                                                    <i class="material-icons">Editar</i>
-                                                    <div class="ripple-container"></div>
+                                                    <i class="material-icons"></i>
+                                                    <div class="ripple-container">Editar</div>
                                                 </a>
                                                 <button type="button" class="btn btn-danger btn-link"
                                                 data-original-title="" title="">
-                                                <i class="material-icons">Fechar</i>
-                                                <div class="ripple-container"></div>
+                                                <i class="material-icons"></i>
+                                                <div class="ripple-container">Fechar</div>
                                             </button>
                                             </td>
                                         </tr>
@@ -270,13 +273,13 @@
                                                 <a rel="tooltip" class="btn btn-success btn-link"
                                                     href="" data-original-title=""
                                                     title="">
-                                                    <i class="material-icons">Editar</i>
-                                                    <div class="ripple-container"></div>
+                                                    <i class="material-icons"></i>
+                                                    <div class="ripple-container">Editar</div>
                                                 </a>
                                                 <button type="button" class="btn btn-danger btn-link"
                                                 data-original-title="" title="">
-                                                <i class="material-icons">Fechar</i>
-                                                <div class="ripple-container"></div>
+                                                <i class="material-icons"></i>
+                                                <div class="ripple-container">Fechar</div>
                                             </button>
                                             </td>
                                         </tr>
@@ -315,13 +318,13 @@
                                                 <a rel="tooltip" class="btn btn-success btn-link"
                                                     href="" data-original-title=""
                                                     title="">
-                                                    <i class="material-icons">Editar</i>
-                                                    <div class="ripple-container"></div>
+                                                    <i class="material-icons"></i>
+                                                    <div class="ripple-container">Editar</div>
                                                 </a>
                                                 <button type="button" class="btn btn-danger btn-link"
                                                     data-original-title="" title="">
-                                                    <i class="material-icons">Fechar</i>
-                                                    <div class="ripple-container"></div>
+                                                    <i class="material-icons"></i>
+                                                    <div class="ripple-container">Fechar</div>
                                                 </button>
                                             </td>
                                         </tr>

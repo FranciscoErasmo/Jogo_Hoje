@@ -21,7 +21,7 @@
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i style="font-size: 1.2rem;" class="fas fa-user-circle ps-2 pe-2 text-center"></i>
                     </div>
-                    <span class="nav-link-text ms-1">User Profile</span>
+                    <span class="nav-link-text ms-1">Perfil</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -30,7 +30,7 @@
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i style="font-size: 1rem;" class="fas fa-lg fa-list-ul ps-2 pe-2 text-center"></i>
                     </div>
-                    <span class="nav-link-text ms-1">User Management</span>
+                    <span class="nav-link-text ms-1">Equipes</span>
                 </a>
             </li>
             <li class="nav-item mt-3">
@@ -42,7 +42,7 @@
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">dashboard</i>
                     </div>
-                    <span class="nav-link-text ms-1">Dashboard</span>
+                    <span class="nav-link-text ms-1">Partidas Diponíveis</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -51,7 +51,7 @@
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">table_view</i>
                     </div>
-                    <span class="nav-link-text ms-1">Tables</span>
+                    <span class="nav-link-text ms-1">Amigos</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -60,7 +60,7 @@
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">receipt_long</i>
                     </div>
-                    <span class="nav-link-text ms-1">Billing</span>
+                    <span class="nav-link-text ms-1">Quadras</span>
                 </a>
             </li>
             <li class="nav-item">

@@ -1,3 +1,5 @@
+
+<meta charset="UTF-8">
 <div class="container-fluid px-2 px-md-4">
     <div class="page-header min-height-300 border-radius-xl mt-4"
         style="background-image: url('https://images.unsplash.com/photo-1531512073830-ba890ca4eba2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');">
@@ -27,21 +29,21 @@
                         <li class="nav-item">
                             <a class="nav-link mb-0 px-0 py-1 active " data-bs-toggle="tab" href="javascript:;"
                                 role="tab" aria-selected="true">
-                                <i class="material-icons text-lg position-relative">Início</i>
+                                <i class="material-icons text-lg position-relative"></i>
                                 <span class="ms-1">Aplicativo</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mb-0 px-0 py-1 " data-bs-toggle="tab" href="javascript:;" role="tab"
                                 aria-selected="false">
-                                <i class="material-icons text-lg position-relative">Email</i>
+                                <i class="material-icons text-lg position-relative"></i>
                                 <span class="ms-1">Mensagens</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mb-0 px-0 py-1 " data-bs-toggle="tab" href="javascript:;" role="tab"
                                 aria-selected="false">
-                                <i class="material-icons text-lg position-relative">Configurações</i>
+                                <i class="material-icons text-lg position-relative"></i>
                                 <span class="ms-1">Configurações</span>
                             </a>
                         </li>
