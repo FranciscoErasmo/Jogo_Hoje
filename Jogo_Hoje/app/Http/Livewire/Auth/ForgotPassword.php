@@ -30,7 +30,7 @@ class ForgotPassword extends Component
     public function show(){
 
         if(env('IS_DEMO')){
-            return back()->with('demo', "You are in a demo version, you can't reset the password");
+            return back()->with('demo', "Você está em uma versão demo, não é possível redefinir a senha!");
         }
         else{
 
@@ -44,12 +44,12 @@ class ForgotPassword extends Component
     
             $this->notify(new ResetPassword($user->id));
 
-            return back()->with('status', "We have emailed your password reset link!");
+            return back()->with('status', "Enviamos por e-mail seu link de redefinição de senha!");
 
     
         } else {
     
-            return back()->with('email', "We can't find any user with that email address.");
+            return back()->with('email', "Nós não conseguimos encontrar nenhum usuário com esse endereço de email");
     
         }
     }

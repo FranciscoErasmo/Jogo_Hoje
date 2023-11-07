@@ -1,6 +1,7 @@
 <div class="fixed-plugin">
-    <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
-        <i class="material-icons py-2">configurações</i>
+    <a class="fixed-plugin-button text-dark position-fixed px-1 py-2">
+        <i class="material-icons py-3">configurations</i>
+        
     </a>
     <div class="card shadow-lg">
         <div class="card-header pb-0 pt-3">
@@ -10,7 +11,7 @@
             </div>
             <div class="float-end mt-4">
                 <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
-                    <i class="material-icons">Claro</i>
+                    <i class="material-icons">clear</i>
                 </button>
             </div>
             <!-- End Toggle Button -->

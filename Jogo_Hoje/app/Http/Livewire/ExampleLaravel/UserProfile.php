@@ -4,6 +4,7 @@ namespace App\Http\Livewire\ExampleLaravel;
 
 use App\Models\User;
 use Livewire\Component;
+use Illuminate\Http\Request;
 
 class UserProfile extends Component
 {
@@ -16,7 +17,7 @@ class UserProfile extends Component
             'user.email' => 'required|email|unique:users,email,'.$this->user->id,
             'user.phone' => 'required|max:10',
             'user.about' => 'required:max:150',
-            'user.location' => 'required'
+            'user.location' => 'required: max 100'
         ];
     }
 
@@ -51,7 +52,19 @@ class UserProfile extends Component
 
 public function render()
 {
+   
     return view('livewire.example-laravel.user-profile');
 }
+ public function updateprofile(Request $request,$id){
+    $user = User::find($id);
+    $user->name = $request->input('name');
+    $user->email = $request->input('email');
+    $user->location = $request->input('location');
+    $user->phone = $request->input('phone');
+    $user->about = $request->input('about');
+    $user->update();
+      
+
+ }
 
 }

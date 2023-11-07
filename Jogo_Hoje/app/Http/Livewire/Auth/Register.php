@@ -12,6 +12,7 @@ class Register extends Component
     public $email = '';
     public $password = '';
 
+
     protected $rules=[
     'name' => 'required|min:3',
     'email' => 'required|email|unique:users,email',

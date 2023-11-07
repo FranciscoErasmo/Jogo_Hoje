@@ -361,7 +361,7 @@
                                             </a>
                                         </div>
                                         <div class="card-body p-3">
-                                            <p class="mb-0 text-sm">Project #3</p>
+                                            <p class="mb-0 text-sm">Jogos #3</p>
                                             <a href="javascript:;">
                                                 <h5>
                                                     Minimalist
