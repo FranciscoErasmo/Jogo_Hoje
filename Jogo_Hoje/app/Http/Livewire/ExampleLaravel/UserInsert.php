@@ -5,10 +5,10 @@ use App\Models\User;
 use Livewire\Component;
 use Illuminate\Http\Request;
 
-class UserManagement extends Component
+class UserInsert extends Component
 {
-    public function render()
+    public function userinsert()
     {
-        return view('livewire.example-laravel.user-management');
+        return view('livewire.example-laravel.user-insert');
     }
 }

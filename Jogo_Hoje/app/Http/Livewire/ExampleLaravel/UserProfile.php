@@ -55,7 +55,7 @@ public function render()
    
     return view('livewire.example-laravel.user-profile');
 }
- public function updateprofile(Request $request,$id){
+ public function u  (Request $request,$id){
     $user = User::find($id);
     $user->name = $request->input('name');
     $user->email = $request->input('email');

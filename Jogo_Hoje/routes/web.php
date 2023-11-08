@@ -43,11 +43,12 @@ Route::post('criar-conta', [Register::class,'store'])->name('criar-conta');
 Route::get('sign-in', Login::class)->middleware('guest')->name('login');
 
 Route::get('user-profile', UserProfile::class)->middleware('auth')->name('user-profile');
-Route::post('updateprofile/{id}',[UserProfile::class,'updateprofile'])->name('updateprofile'); //criada
+Route::post('updateprofile/{id}',[UserProfile::class,'updateprofile'])->name('updateprofile');
 
 
 Route::get('user-management', UserManagement::class)->middleware('auth')->name('user-management');
-Route::get('user-management', [UserManagement::class, 'insertequipe'])->name('insertequipe'); //criada
+
+Route::get('userinsert', [UserInsert::class, 'userinsert'])->name('user-insert');
 
 
 Route::group(['middleware' => 'auth'], function () {
