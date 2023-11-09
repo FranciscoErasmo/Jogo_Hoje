@@ -11,4 +11,6 @@ class UserManagement extends Component
     {
         return view('livewire.example-laravel.user-management');
     }
+
+    
 }

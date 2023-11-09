@@ -8,6 +8,7 @@ use App\Http\Livewire\Billing;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Dashboard;
 use App\Http\Livewire\ExampleLaravel\UserManagement;
+use App\Http\Livewire\ExampleLaravel\UserInsert;
 use App\Http\Livewire\ExampleLaravel\UserProfile;
 use App\Http\Livewire\Notifications;
 use App\Http\Livewire\Profile;
@@ -48,7 +49,7 @@ Route::post('updateprofile/{id}',[UserProfile::class,'updateprofile'])->name('up
 
 Route::get('user-management', UserManagement::class)->middleware('auth')->name('user-management');
 
-Route::get('userinsert', [UserInsert::class, 'userinsert'])->name('user-insert');
+Route::get('userinsert', UserInsert::class)->name('user-insert');
 
 
 Route::group(['middleware' => 'auth'], function () {
