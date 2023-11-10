@@ -14,14 +14,27 @@ return new class extends Migration
         Schema::create('equipe', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('modalidade');
+            $table->string('status');
+            $table->string('capitao');
+            $table->string('jogadoresa')->nullable();
+            $table->string('jogadoresb')->nullable();
+            $table->string('confrat')->nullable();
+            $table->string('local');
+            $table->string('horainicial');
+            $table->string('horafinal');
+            $table->string('checkbox');
         });
     }
 
     /**
      * Reverse the migrations.
      */
-    public function down(): void
+    public function down(): void 
     {
         Schema::dropIfExists('equipe');
     }
+
+    
 };
+

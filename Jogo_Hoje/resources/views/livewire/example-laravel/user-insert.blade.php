@@ -1,4 +1,3 @@
-
 <meta charset="UTF-8">
 <div class="container-fluid px-2 px-md-4">
     <div class="page-header min-height-300 border-radius-xl mt-4"
@@ -41,24 +40,47 @@
               <input type="text" class="form-control">
             </div>
             <div class="input-group input-group-outline my-3">
-                <label class="form-label">Número de jogadores A</label>
+                <label class="form-label">Time A</label>
                 <input type="url" class="form-control">
               </div>
+              <select class="form-control" multiple="multiple">
+                <option selected="selected">João</option>
+                <option selected="selected">Karla</option>
+              </select>
             <div class="input-group input-group-outline my-3">
-                <label class="form-label">Número de jogadores B</label>
+                <label class="form-label">Time B</label>
                 <input type="url" class="form-control">
               </div>
-
+              <select class="form-control" multiple="multiple">
+                <option selected="selected">Joana</option>
+                <option selected="selected">Antônio</option>
+              </select>
             <div class="input-group input-group-outline my-3">
               <label class="form-label">Local</label>
               <input type="url" class="form-control">
+            </div>
+            <div class="input-group input-group-outline my-3">
+              <label class="form-label">Local de confraternização | Pós jogo</label>
+              <input type="url" class="form-control">
+            </div>
             <div class="input-group input-group-static my-3">
               <label>Date</label>
               <input type="date" class="form-control">
             </div>
             <div class="input-group input-group-static my-3">
-              <label>Time</label>
+              <label>Horário de início</label>
               <input type="time" class="form-control">
+            </div>
+            <div class="input-group input-group-static my-3">
+              <label>Horário de término</label>
+              <input type="time" class="form-control">
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Estou ciente de que o tempo de uso da quadra não deve ser superior a 3 horas por agendamento público, e 2 horas por agendamento privado
+            </label>
+            
             </div>
             
             <button type="button" class="btn btn-primary btn-lg w-100">Formar Equipe</button>

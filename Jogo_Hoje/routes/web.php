@@ -18,6 +18,7 @@ use App\Http\Livewire\StaticSignUp;
 use App\Http\Livewire\Tables;
 use App\Http\Livewire\VirtualReality;
 use GuzzleHttp\Middleware;
+use App\Http\Controllers\EquipeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,13 +43,18 @@ Route::get('reset-password/{id}', ResetPassword::class)->middleware('signed')->n
 Route::get('sign-up', Register::class)->middleware('guest')->name('register');
 Route::post('criar-conta', [Register::class,'store'])->name('criar-conta');
 Route::get('sign-in', Login::class)->middleware('guest')->name('login');
-
 Route::get('user-profile', UserProfile::class)->middleware('auth')->name('user-profile');
 Route::post('updateprofile/{id}',[UserProfile::class,'updateprofile'])->name('updateprofile');
 
+Route::get('/equipe', [EquipeController::class, 'index']);
+Route::get('/equipe/create', [EquipeController::class, 'create']);
+Route::post('/equipe/store', [EquipeController::class, 'store']);
+
+Route::get('/equipe/create', [EquipeController::class, 'create']);
+Route::post('/equipe/store', [EquipeController::class, 'store']);
 
 Route::get('user-management', UserManagement::class)->middleware('auth')->name('user-management');
-
+Route::get('userinsert', UserInsert::class)->name('user-insert');
 Route::get('userinsert', UserInsert::class)->name('user-insert');
 
 
