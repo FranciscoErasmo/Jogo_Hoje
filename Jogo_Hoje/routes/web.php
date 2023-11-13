@@ -47,15 +47,13 @@ Route::get('user-profile', UserProfile::class)->middleware('auth')->name('user-p
 Route::post('updateprofile/{id}',[UserProfile::class,'updateprofile'])->name('updateprofile');
 
 Route::get('/equipe', [EquipeController::class, 'index']);
-Route::get('/equipe/create', [EquipeController::class, 'create']);
-Route::post('/equipe/store', [EquipeController::class, 'store']);
 
-Route::get('/equipe/create', [EquipeController::class, 'create']);
-Route::post('/equipe/store', [EquipeController::class, 'store']);
+Route::post('/equipe/store', [EquipeController::class,'store'])->middleware('auth')->name('store');
+
 
 Route::get('user-management', UserManagement::class)->middleware('auth')->name('user-management');
-Route::get('userinsert', UserInsert::class)->name('user-insert');
-Route::get('userinsert', UserInsert::class)->name('user-insert');
+Route::get('userinsert', [UserInsert::class,'userinsert'])->middleware('auth')->name('user-insert');
+
 
 
 Route::group(['middleware' => 'auth'], function () {

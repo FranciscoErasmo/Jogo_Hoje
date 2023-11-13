@@ -5,15 +5,16 @@
         <span class="mask  bg-gradient-primary  opacity-6"></span>
     </div>
     <html>
-      <body class="center-form">
+      <body class="center-h1">
         
-      <div class="center-form">
-        <form>
-          <h1 style="text-align: center;">Nova Equipe</h1>
-          <form>
+       <div class="center-h1">
+          <form action="{{route('store')}}"  method="POST">
+              @csrf
+              <h1 style="text-align: center;">Nova Equipe</h1>
+
          
             <h6>Modalidade<h6>
-                <select class="form-control" name="choices-button" id="choices-button" placeholder="Departure">
+                <select class="form-control"  id="choices-button" name="modalidade" placeholder="Departure">
                   <option value="Choice 1" selected ="">Vôlei</option>
                   <option value="Choice 2">Basquete</option>
                   <option value="Choice 3">Beach Tennis</option>
@@ -37,50 +38,45 @@
                 
             <div class="input-group input-group-outline my-3">
               <label class="form-label">Capitão/Administrador</label>
-              <input type="text" class="form-control">
+              <input type="text" name="capitao"  class="form-control">
             </div>
             <div class="input-group input-group-outline my-3">
                 <label class="form-label">Time A</label>
-                <input type="url" class="form-control">
+                <input type="text" name="timea" class="form-control">
               </div>
-              <select class="form-control" multiple="multiple">
-                <option selected="selected">João</option>
-                <option selected="selected">Karla</option>
-              </select>
             <div class="input-group input-group-outline my-3">
                 <label class="form-label">Time B</label>
-                <input type="url" class="form-control">
+                <input type="text" name="timeb" class="form-control">
               </div>
-              <select class="form-control" multiple="multiple">
-                <option selected="selected">Joana</option>
-                <option selected="selected">Antônio</option>
-              </select>
             <div class="input-group input-group-outline my-3">
               <label class="form-label">Local</label>
-              <input type="url" class="form-control">
+              <input type="text" name="local" class="form-control">
             </div>
             <div class="input-group input-group-outline my-3">
               <label class="form-label">Local de confraternização | Pós jogo</label>
-              <input type="url" class="form-control">
+              <input type="text" name="confrat" class="form-control">
             </div>
-            <div class="input-group input-group-static my-3">
-              <label>Date</label>
-              <input type="date" class="form-control">
+            <div class="input-group input-group-outline my-3">
+              <label class="form-label">Data</label>
+              <input type="text" name="data" class="form-control">
             </div>
-            <div class="input-group input-group-static my-3">
-              <label>Horário de início</label>
-              <input type="time" class="form-control">
+            <div class="input-group input-group-outline my-3">
+              <label class="form-label">Horário Inicial</label>
+              <input type="text" name="horarioinicial" class="form-control">
             </div>
-            <div class="input-group input-group-static my-3">
-              <label>Horário de término</label>
-              <input type="time" class="form-control">
+            <div class="input-group input-group-outline my-3">
+              <label class="form-label">Horário de Término</label>
+              <input type="text" name="horariofinal" class="form-control">
             </div>
             <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label" for="flexCheckDefault">
-                Estou ciente de que o tempo de uso da quadra não deve ser superior a 3 horas por agendamento público, e 2 horas por agendamento privado
+                Estou ciente de que o tempo de uso da quadra não deve ser superior a 4 horas por agendamento público, e 3 horas por agendamento privado
             </label>
-            
             </div>
-            
-            <button type="button" class="btn btn-primary btn-lg w-100">Formar Equipe</button>
+            <button type="submit" class="btn btn-primary btn-lg w-100">Formar Equipe</button>
+          </form>
+        </div>
+      </body>
+    </html>
+</div>

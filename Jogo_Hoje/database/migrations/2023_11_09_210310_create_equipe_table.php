@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('modalidade');
             $table->string('status');
             $table->string('capitao');
-            $table->string('jogadoresa')->nullable();
-            $table->string('jogadoresb')->nullable();
+            $table->string('timea')->nullable();
+            $table->string('timeb')->nullable();
             $table->string('confrat')->nullable();
             $table->string('local');
             $table->string('horainicial');

@@ -20,23 +20,24 @@ class EquipeController extends Controller
     }
 
     public function store(Request $request)
-    {
-    // Lógica para armazenar a equipe no banco de dados
-
-        $request->validate([
-            'modalidade' => 'required|string',
-            'status' => 'required|string',
-            'capitao' => 'required|string',
-            'local' => 'required|string',
-            'horainicial' => 'required|string',
-            'horafinal' => 'required|string',
-            'checkbox' => 'required|string',
-    ]);
-
-    Equipe::create($request->all());
+       {
+      
+    $equpe =  new  Equipe();
+    $equpe->modalidade = $request->input('modalidade');
+    $equpe->status = $request->input('status');
+    $equpe->capitao = $request->input('capitao');
+    $equpe->timea = $request->input('timea');
+    $equpe->timeb = $request->input('timeb');
+    $equpe->confrat = $request->input('confrat');
+    $equpe->local = $request->input('local');
+    $equpe->data = $request->input('data');
+    $equpe->horainicial = $request->input('horainicial');
+    $equpe->horafinal = $request->input('horafinal');
+    $equpe->checkbox = $request->input('checkbox');
+    $equpe ->save();
 
     return redirect('/equipe')->with('success', 'Equipe criada com sucesso!');
-
     // Redireciona ou faz algo após a criação da equipe
 }
+
 }

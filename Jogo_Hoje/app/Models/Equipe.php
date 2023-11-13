@@ -8,10 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Equipe extends Model
 {
     use HasFactory;
-}
 
-class Equipe extends Model
-{
     protected $table = 'equipe'; // O nome da tabela no banco de dados
-    protected $fillable = ['modalidade', 'status', 'capitao', 'jogadoresa', 'jogadoresb', 'confrat', 'local', 'horainicial', 'horafinal', 'checkbox'];
+    protected $fillable = ['modalidade', 'status', 'capitao', 'timea', 'timeb', 'confrat', 'local', 'data', 'horainicial', 'horafinal', 'checkbox'];
 }
