@@ -23,6 +23,7 @@ class EquipeController extends Controller
        {
       
     $equpe =  new  Equipe();
+   
     $equpe->modalidade = $request->input('modalidade');
     $equpe->status = $request->input('status');
     $equpe->capitao = $request->input('capitao');
@@ -36,7 +37,7 @@ class EquipeController extends Controller
     $equpe->checkbox = $request->input('checkbox');
     $equpe ->save();
 
-    return redirect('/equipe')->with('success', 'Equipe criada com sucesso!');
+    return redirect('/user-management')->with('success', 'Equipe criada com sucesso!');
     // Redireciona ou faz algo após a criação da equipe
 }
 

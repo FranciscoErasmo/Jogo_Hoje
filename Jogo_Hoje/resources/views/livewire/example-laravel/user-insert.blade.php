@@ -13,8 +13,8 @@
               <h1 style="text-align: center;">Nova Equipe</h1>
 
          
-            <h6>Modalidade<h6>
-                <select class="form-control"  id="choices-button" name="modalidade" placeholder="Departure">
+              <label class="form-label"> <h4>Modalidade<h4>
+                <select name= "modalidade" id="inputState" class="form-control" data-gtm-form-interact-field-id="0">
                   <option value="Choice 1" selected ="">Vôlei</option>
                   <option value="Choice 2">Basquete</option>
                   <option value="Choice 3">Beach Tennis</option>
@@ -25,15 +25,10 @@
                   <option value="Choice 4">Queimada</option>
                   <option value="Choice 2">Handebol</option>
                 </select>
+                                
                 
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Privado
-                </label>
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  Público
-                </label>
+                  <label class="form-label"> <h4>Status<h4>
+                    <select name= "status" id="inputState" class="form-control" data-gtm-form-interact-field-id="0"><option selected="selected">Público </option> <option>Privado</option></select>
         
                 
             <div class="input-group input-group-outline my-3">
@@ -56,23 +51,21 @@
               <label class="form-label">Local de confraternização | Pós jogo</label>
               <input type="text" name="confrat" class="form-control">
             </div>
-            <div class="input-group input-group-outline my-3">
-              <label class="form-label">Data</label>
-              <input type="text" name="data" class="form-control">
-            </div>
-            <div class="input-group input-group-outline my-3">
-              <label class="form-label">Horário Inicial</label>
-              <input type="text" name="horarioinicial" class="form-control">
-            </div>
-            <div class="input-group input-group-outline my-3">
-              <label class="form-label">Horário de Término</label>
-              <input type="text" name="horariofinal" class="form-control">
-            </div>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+            <div class="input-group input-group-outline my-3"> 
+
+             <label for="hora">Hora inicial:</label>
+        <input type="time" id="hora" name="horainicial" required>
+
+             <label for="hora">Hora de término:</label>
+        <input type="time" id="hora" name="horafinal" required>
+
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-                Estou ciente de que o tempo de uso da quadra não deve ser superior a 4 horas por agendamento público, e 3 horas por agendamento privado
+              <input class="form-check-input" name="checkbox" type="checkbox" id="flexCheckDefault" required>
+            <label class="form-check-label" for="flexCheckDefault">Estou ciente de que o tempo de uso da quadra não deve ser superior a 4 horas por agendamento público, e 3 horas por agendamento privado
             </label>
+                
             </div>
             <button type="submit" class="btn btn-primary btn-lg w-100">Formar Equipe</button>
           </form>

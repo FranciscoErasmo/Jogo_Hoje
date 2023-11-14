@@ -7,10 +7,7 @@
                     <div class="card my-4">
                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                             <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                                <h6 class="text-white mx-3"><strong> Adicionar, Editar, Recursos de exclusão não são funcionais!</strong> Isto é um <strong> recurso </strong> PRO! Clique
-                                    <strong><a
-                                            href="https://www.creative-tim.com/product/material-dashboard-pro-laravel-livewire"
-                                            target="_blank" class="text-white"><u>aqui</u> </a></strong>para ver o produto PRO!</h6>
+                                <h6 class="text-white mx-3"><strong> Veja as partidas que você criou e/ou se inscreveu!</strong>
                             </div>
                         </div>
                         <div class=" me-3 my-3 text-end">
@@ -24,31 +21,38 @@
                                         <tr>
                                             <th
                                                 class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                ID
-                                            </th>
-                                            <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                FOTO</th>
-                                            <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                NOME DA EQUIPE</th>
-                                            <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                LOCAL</th>
-                                            <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                CAPITÃO</th>
+                                                ID</th>
                                             <th
                                                 class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                                 MODALIDADE</th>
                                             <th
                                                 class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                HORÁRIO MARCADO
-                                            </th>
+                                                STATUS</th>
+                                            <th
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                CAPITÃO</th>
+                                            <th
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                TIME A</th>
+                                            <th
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                TIME B</th>
+                                            <th
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                LOCAL</th>
+                                            <th
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                DATA</th>
+                                            <th
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                HORÁRIO INICIAL</th>
+                                            <th
+                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                HORÁRIO DE TÉRMINO</th>
                                             <th class="text-secondary opacity-7"></th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                   <tbody>
                                         <tr>
                                             <td>
                                                 <div class="d-flex px-2 py-1">
@@ -57,8 +61,8 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
+                                             <td>
+                                                <div class="d-flex px-2 py-1">Y
                                                     <div>
                                                         <img src="{{ asset('assets') }}/img/team-2.jpg"
                                                             class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
