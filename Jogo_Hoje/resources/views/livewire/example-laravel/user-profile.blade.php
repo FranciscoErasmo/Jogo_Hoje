@@ -94,13 +94,11 @@
                         </div>
 
                         <div class="mb-3 col-md-12">
-
                             <label for="floatingTextarea2">Sobre</label>
-                            <textarea   name="about" class="form-control border border-2 p-2"
-                                placeholder=" Escreva alguma coisa sobre você" id="floatingTextarea2" rows="4"
-                                cols="50">value="{{ auth()->user()->about}}"  </textarea>
-                           
+                            <textarea name="about" class="form-control border border-2 p-2"
+                            placeholder="Escreva alguma coisa sobre você" id="floatingTextarea2" rows="4" cols="50">{{ trim(auth()->user()->about) }}</textarea>
                         </div>
+                        
                     </div>
                     <button type="submit" class="btn bg-gradient-dark">Enviar</button>
                 </form>

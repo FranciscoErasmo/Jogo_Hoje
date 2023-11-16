@@ -1,5 +1,5 @@
-<meta charset="UTF-8">
-<div class="container-fluid px-2 px-md-4">
+
+<div class="container-fluid py-4"> 
     <div class="page-header min-height-300 border-radius-xl mt-4"
         style="background-image: url('https://images.unsplash.com/photo-1531512073830-ba890ca4eba2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');">
         <span class="mask  bg-gradient-primary  opacity-6"></span>
@@ -15,22 +15,21 @@
          
               <label class="form-label"> <h4>Modalidade<h4>
                 <select name= "modalidade" id="inputState" class="form-control" data-gtm-form-interact-field-id="0">
-                  <option value="Choice 1" selected ="">Vôlei</option>
-                  <option value="Choice 2">Basquete</option>
-                  <option value="Choice 3">Beach Tennis</option>
-                  <option value="Choice 4">Futebol</option>
-                  <option value="Choice 1">Futsal</option>
-                  <option value="Choice 2">Futevôlei</option>
-                  <option value="Choice 3">Tênis</option>
-                  <option value="Choice 4">Queimada</option>
-                  <option value="Choice 2">Handebol</option>
+                  <option value="Vôlei" selected ="">Vôlei</option>
+                  <option value="Basquete">Basquete</option>
+                  <option value="Beach tennis">Beach Tennis</option>
+                  <option value="Futebol">Futebol</option>
+                  <option value="Futsal">Futsal</option>
+                  <option value="Futevôlei">Futevôlei</option>
+                  <option value="Tênis">Tênis</option>
+                  <option value="Queimada">Queimada</option>
+                  <option value="Handebol">Handebol</option>
                 </select>
                                 
                 
                   <label class="form-label"> <h4>Status<h4>
                     <select name= "status" id="inputState" class="form-control" data-gtm-form-interact-field-id="0"><option selected="selected">Público </option> <option>Privado</option></select>
         
-                
             <div class="input-group input-group-outline my-3">
               <label class="form-label">Capitão/Administrador</label>
               <input type="text" name="capitao"  class="form-control">

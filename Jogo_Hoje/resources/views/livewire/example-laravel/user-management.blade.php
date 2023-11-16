@@ -1,7 +1,7 @@
 
         <!-- Navbar -->
         <!-- End Navbar -->
-        <div class="container-fluid py-4">
+        <div class="container-fluid py-4"> 
             <div class="row">
                 <div class="col-12">
                     <div class="card my-4">
@@ -17,321 +17,58 @@
                         <div class="card-body px-0 pb-2">
                             <div class="table-responsive p-0">
                                 <table class="table align-items-center mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                ID</th>
-                                            <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                MODALIDADE</th>
-                                            <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                STATUS</th>
-                                            <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                CAPITÃO</th>
-                                            <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                TIME A</th>
-                                            <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                TIME B</th>
-                                            <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                LOCAL</th>
-                                            <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                DATA</th>
-                                            <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                HORÁRIO INICIAL</th>
-                                            <th
-                                                class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                HORÁRIO DE TÉRMINO</th>
-                                            <th class="text-secondary opacity-7"></th>
-                                        </tr>
-                                    </thead>
+                                    
                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <p class="mb-0 text-sm">1</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                             <td>
-                                                <div class="d-flex px-2 py-1">Y
-                                                    <div>
-                                                        <img src="{{ asset('assets') }}/img/team-2.jpg"
-                                                            class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm">John</h6>
-
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <p class="text-xs text-secondary mb-0">john@quadrahoje-tim.com
-                                                </p>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">Admin</span>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">30/10/23</span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <a rel="tooltip" class="btn btn-success btn-link"
-                                                    href="" data-original-title=""
-                                                    title="">
-                                                    <i class="material-icons"></i>
-                                                    <div class="ripple-container">Editar</div>
-                                                </a>
-                                                
-                                                <button type="button" class="btn btn-danger btn-link"
-                                                data-original-title="" title="">
-                                                <i class="material-icons"></i>
-                                                <div class="ripple-container">Fechar</div>
-                                            </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <p class="mb-0 text-sm">2</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="{{ asset('assets') }}/img/team-3.jpg"
-                                                            class="avatar avatar-sm me-3 border-radius-lg" alt="user2">
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm">Alexa</h6>
-
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <p class="text-xs text-secondary mb-0">
-                                                    alexa@quadrahoje-tim.com</p>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">Criador</span>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">30/10/23</span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <a rel="tooltip" class="btn btn-success btn-link"
-                                                href="" data-original-title=""
-                                                title="">
-                                                <i class="material-icons"></i>
-                                                <div class="ripple-container">Editar</div>
+                                    @foreach ($equipe as $equipe)
+                                        
+                                    <div>
+                                        <div class="col-md-4 mb-4">
+                                          <div class="card shadow-lg">
+                                            <span class="badge rounded-pill bg-light text-dark w-30 mt-n0 mx-auto">{{$equipe->status}}</span>
+                                            <div class="card-header text-center pt-4 pb-3">
+                                              <h1 class="font-weight-bold mt-2">
+                                                <small class="text-lg mb-auto"><h1 class="text-lg" >{{$equipe->modalidade}}</h1></small>
+                                              </h1>
+                                            </div>
+                                            <div class="card-body text-lg-start text-center pt-0">
+                                              <div class="d-flex justify-content-lg-start justify-content-center p-2">
+                                                <h1 class="text-lg"> Capitão: </h1>
+                                                <span class="ps-3">{{$equipe->capitao}}</span>
+                                              </div>
+                                      
+                                              <div class="d-flex justify-content-lg-start justify-content-center p-2">
+                                                <h1 class="text-lg"> Data: </h1>
+                                                <span class="ps-3">{{$equipe->data}}</span>
+                                              </div>
+                                      
+                                              <div class="d-flex justify-content-lg-start justify-content-center p-2">
+                                                <h1 class="text-lg"> Local: </h1>
+                                                <span class="ps-3">{{$equipe->local}}</span>
+                                              </div>
+                                      
+                                              <div class="d-flex justify-content-lg-start justify-content-center p-2">
+                                                <h1 class="text-lg"> Início: </h1>
+                                                <span class="ps-3">{{$equipe->horainicial}}</span>
+                                              </div>
+                                      
+                                              <div class="d-flex justify-content-lg-start justify-content-center p-2">
+                                                <h1 class="text-lg"> Fim: </h1>
+                                                <span class="ps-3">{{$equipe->horafinal}}</span>
+                                              </div>
+                                      
+                                      
+                                              <a href="javascript:;" class="btn btn-icon bg-gradient-dark d-lg-block mt-3 mb-0">
+                                                Editar
+                                                <i class="fas fa-arrow-right ms-1"></i>
                                             </a>
-                                             <button type="button" class="btn btn-danger btn-link"
-                                                    data-original-title="" title="">
-                                                    <i class="material-icons"></i>
-                                                    <div class="ripple-container">Fechar</div>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <p class="mb-0 text-sm">3</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="{{ asset('assets') }}/img/team-4.jpg"
-                                                            class="avatar avatar-sm me-3 border-radius-lg" alt="user3">
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm">Laurent</h6>
-
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <p class="text-xs text-secondary mb-0">
-                                                    laurent@quadrahoje-tim.com</p>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">Membro</span>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">30/10/23</span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <a rel="tooltip" class="btn btn-success btn-link"
-                                                    href="" data-original-title=""
-                                                    title="">
-                                                    <i class="material-icons"></i>
-                                                    <div class="ripple-container">Editar</div>
-                                                </a>
-                                                <button type="button" class="btn btn-danger btn-link"
-                                                data-original-title="" title="">
-                                                <i class="material-icons"></i>
-                                                <div class="ripple-container">Fechar</div>
-                                            </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <p class="mb-0 text-sm">4</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="{{ asset('assets') }}/img/team-3.jpg"
-                                                            class="avatar avatar-sm me-3 border-radius-lg" alt="user4">
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm">Michael</h6>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <p class="text-xs text-secondary mb-0">
-                                                    michael@quadrahoje-tim.com</p>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">Membro</span>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">30/10/23</span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <a rel="tooltip" class="btn btn-success btn-link"
-                                                    href="" data-original-title=""
-                                                    title="">
-                                                    <i class="material-icons"></i>
-                                                    <div class="ripple-container">Editar</div>
-                                                </a>
-                                                <button type="button" class="btn btn-danger btn-link"
-                                                data-original-title="" title="">
-                                                <i class="material-icons"></i>
-                                                <div class="ripple-container">Fechar</div>
-                                            </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <p class="mb-0 text-sm">5</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="{{ asset('assets') }}/img/team-2.jpg"
-                                                            class="avatar avatar-sm me-3 border-radius-lg" alt="user5">
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm">Richard</h6>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <p class="text-xs text-secondary mb-0">
-                                                    richard@quadrahoje-tim.com</p>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">Criador</span>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">30/10/23</span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <a rel="tooltip" class="btn btn-success btn-link"
-                                                    href="" data-original-title=""
-                                                    title="">
-                                                    <i class="material-icons"></i>
-                                                    <div class="ripple-container">Editar</div>
-                                                </a>
-                                                <button type="button" class="btn btn-danger btn-link"
-                                                data-original-title="" title="">
-                                                <i class="material-icons"></i>
-                                                <div class="ripple-container">Fechar</div>
-                                            </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div class="d-flex flex-column justify-content-center">
-                                                        <p class="mb-0 text-sm">6</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex px-2 py-1">
-                                                    <div>
-                                                        <img src="{{ asset('assets') }}/img/team-4.jpg"
-                                                            class="avatar avatar-sm me-3 border-radius-lg" alt="user6">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm">Miriam</h6>
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center text-sm">
-                                                <p class="text-xs text-secondary mb-0">
-                                                    miriam@quadranova-tim.com</p>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">Criador</span>
-                                            </td>
-                                            <td class="align-middle text-center">
-                                                <span class="text-secondary text-xs font-weight-bold">30/10/23</span>
-                                            </td>
-                                            <td class="align-middle">
-                                                <a rel="tooltip" class="btn btn-success btn-link"
-                                                    href="" data-original-title=""
-                                                    title="">
-                                                    <i class="material-icons"></i>
-                                                    <div class="ripple-container">Editar</div>
-                                                </a>
-                                                <button type="button" class="btn btn-danger btn-link"
-                                                    data-original-title="" title="">
-                                                    <i class="material-icons"></i>
-                                                    <div class="ripple-container">Fechar</div>
-                                                </button>
-                                            </td>
-                                        </tr>
+                                            
+                                            <a href="javascript:;" class="btn btn-icon bg-gradient-red d-lg-block mt-3 mb-0">                                                    Excluir
+                                                <i class="fas fa-arrow-right ms-1"></i>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
