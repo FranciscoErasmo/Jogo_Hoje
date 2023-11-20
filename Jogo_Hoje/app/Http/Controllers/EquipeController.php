@@ -41,4 +41,18 @@ class EquipeController extends Controller
     // Redireciona ou faz algo após a criação da equipe
 }
 
+public function destroy($id)
+{
+    
+    // Lógica para encontrar e excluir o local pelo ID
+    $equipe = Equipe::find($id);
+
+    if (!$equipe) {
+        return redirect()->route('equipe.index')->with('error', 'Local não encontrado.');
+    }
+
+    $equipe->delete();
+
+    return redirect()->route('equipe.index')->with('success', 'Local excluído com sucesso.');
+}
 }

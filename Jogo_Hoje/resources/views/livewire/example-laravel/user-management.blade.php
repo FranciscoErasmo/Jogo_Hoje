@@ -61,8 +61,11 @@
                                                 Editar
                                                 <i class="fas fa-arrow-right ms-1"></i>
                                             </a>
-                                            
-                                            <a href="javascript:;" class="btn btn-icon bg-gradient-red d-lg-block mt-3 mb-0">                                                    Excluir
+                                            <form action="{{ route('equipe.destroy', $equipe->id) }}" method="post">
+                                              @csrf
+                                              @method('DELETE')
+                                              <button type="submit" class="btn btn-icon bg-gradient-dark d-lg-block mt-3 mb-0" onclick="return confirm('Tem certeza que deseja excluir este local?')">Excluir</button>
+                                            </form>
                                                 <i class="fas fa-arrow-right ms-1"></i>
                                               </a>
                                             </div>
