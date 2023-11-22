@@ -7,7 +7,7 @@
                     <div class="card my-4">
                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                             <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                                <h6 class="text-white mx-3"><strong> Veja as partidas que você criou e/ou se inscreveu!</strong>
+                                <h6 class="text-white mx-3"><strong>CRIE UMA EQUIPE E COMPARTILHE COM SEUS AMIGOS!</strong>
                             </div>
                         </div>
                         <div class=" me-3 my-3 text-end">
@@ -56,17 +56,12 @@
                                                 <span class="ps-3">{{$equipe->horafinal}}</span>
                                               </div>
                                       
-                                      
-                                              <a href="javascript:;" class="btn btn-icon bg-gradient-dark d-lg-block mt-3 mb-0">
-                                                Editar
-                                                <i class="fas fa-arrow-right ms-1"></i>
-                                            </a>
-                                            <form action="{{ route('equipe.destroy', $equipe->id) }}" method="post">
-                                              @csrf
-                                              @method('DELETE')
-                                              <button type="submit" class="btn btn-icon bg-gradient-dark d-lg-block mt-3 mb-0" onclick="return confirm('Tem certeza que deseja excluir este local?')">Excluir</button>
-                                            </form>
-                                                <i class="fas fa-arrow-right ms-1"></i>
+                                            
+                                              <a href="{{route('equipes-editar',$equipe->id)}}"> <button type="submit" class="btn btn-icon bg-gradient-dark d-lg-block mt-3 mb-0">Editar</button></a>
+                                          
+
+                                              <a href="{{route('equipe.destroy',$equipe->id)}}"> <button type="submit" class="btn btn-icon bg-gradient-dark d-lg-block mt-3 mb-0" onclick="return confirm('Tem certeza que deseja excluir este local?')">Excluir</button>
+
                                               </a>
                                             </div>
                                           </div>

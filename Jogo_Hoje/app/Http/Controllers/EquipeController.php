@@ -48,11 +48,30 @@ public function destroy($id)
     $equipe = Equipe::find($id);
 
     if (!$equipe) {
-        return redirect()->route('equipe.index')->with('error', 'Local não encontrado.');
+        return redirect()->route('user-management')->with('error', 'Local não encontrado.');
     }
 
     $equipe->delete();
 
-    return redirect()->route('equipe.index')->with('success', 'Local excluído com sucesso.');
+    return redirect()->route('user-management')->with('success', 'Local excluído com sucesso.');
 }
+
+public function editar($id)
+{
+    // Lógica para obter os dados do item com o ID fornecido
+    $equipe = Equipe::find($id);
+
+    // Retorne a view de edição com os dados da equipe
+    return view('livewire/example-laravel/equipes-editar', compact('equipe'));
+}
+
+public function atualizar(Request $request, $id)
+{
+    
+
+    // Redirecione para a página de detalhes após a atualização
+    return redirect( )->route('user-management');
+
+}
+
 }
