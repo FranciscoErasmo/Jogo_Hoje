@@ -42,6 +42,7 @@ class EquipeController extends Controller
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 public function destroy($id)
 {
     
@@ -56,6 +57,8 @@ public function destroy($id)
 
     return redirect()->route('user-management')->with('success', 'Equipe excluído com sucesso.');
 }
+=======
+>>>>>>> parent of 00de784 (uytrew)
 =======
 >>>>>>> parent of 00de784 (uytrew)
 }

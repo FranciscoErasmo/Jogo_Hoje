@@ -62,6 +62,7 @@
                                                 <i class="fas fa-arrow-right ms-1"></i>
                                             </a>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <form action="{{ route('equipe.destroy', $equipe->id) }}" method="post">
                                               @csrf
                                               @method('DELETE')
@@ -70,6 +71,8 @@
                                             </form>
                                                 
 =======
+=======
+>>>>>>> parent of 00de784 (uytrew)
                                             
                                             <a href="javascript:;" class="btn btn-icon bg-gradient-red d-lg-block mt-3 mb-0">                                                    Excluir
                                                 <i class="fas fa-arrow-right ms-1"></i>
