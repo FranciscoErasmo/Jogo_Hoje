@@ -41,6 +41,7 @@ class EquipeController extends Controller
     // Redireciona ou faz algo após a criação da equipe
 }
 
+<<<<<<< HEAD
 public function destroy($id)
 {
     
@@ -55,4 +56,6 @@ public function destroy($id)
 
     return redirect()->route('user-management')->with('success', 'Equipe excluído com sucesso.');
 }
+=======
+>>>>>>> parent of 00de784 (uytrew)
 }
