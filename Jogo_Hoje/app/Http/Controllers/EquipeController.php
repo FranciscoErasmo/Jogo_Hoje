@@ -48,11 +48,11 @@ public function destroy($id)
     $equipe = Equipe::find($id);
 
     if (!$equipe) {
-        return redirect()->route('equipe.index')->with('error', 'Local não encontrado.');
+        return redirect()->route('user-management')->with('error', 'Equipe não encontrado.');
     }
 
     $equipe->delete();
 
-    return redirect()->route('equipe.index')->with('success', 'Local excluído com sucesso.');
+    return redirect()->route('user-management')->with('success', 'Equipe excluído com sucesso.');
 }
 }

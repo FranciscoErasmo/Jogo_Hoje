@@ -8,13 +8,13 @@
       <body class="center-h1">
         
        <div class="center-h1">
-          <form action="{{route('store')}}"  method="POST">
+          <form action="{{route('criar-conta')}}"  method="POST">
               @csrf
               <h1 style="text-align: center;">Nova Equipe</h1>
 
          
               <label class="form-label"> <h4>Modalidade<h4>
-                <select name= "modalidade" id="inputState" class="form-control" data-gtm-form-interact-field-id="0">
+                <select name= "modalidade" id="inputState" class="form-control" data-gtm-form-interact-field-id="0" required>
                   <option value="Vôlei" selected ="">Vôlei</option>
                   <option value="Basquete">Basquete</option>
                   <option value="Beach tennis">Beach Tennis</option>
@@ -28,23 +28,23 @@
                                 
                 
                   <label class="form-label"> <h4>Status<h4>
-                    <select name= "status" id="inputState" class="form-control" data-gtm-form-interact-field-id="0"><option selected="selected">Público </option> <option>Privado</option></select>
+                    <select name= "status" id="inputState" class="form-control" data-gtm-form-interact-field-id="0" required><option selected="selected">Público </option> <option>Privado</option></select>
         
             <div class="input-group input-group-outline my-3">
               <label class="form-label">Capitão/Administrador</label>
-              <input type="text" name="capitao"  class="form-control">
+              <input type="text" name="capitao"  class="form-control" required>
             </div>
             <div class="input-group input-group-outline my-3">
                 <label class="form-label">Time A</label>
-                <input type="text" name="timea" class="form-control">
+                <input type="text" name="timea" class="form-control" required>
               </div>
             <div class="input-group input-group-outline my-3">
                 <label class="form-label">Time B</label>
-                <input type="text" name="timeb" class="form-control">
+                <input type="text" name="timeb" class="form-control" required>
               </div>
             <div class="input-group input-group-outline my-3">
               <label class="form-label">Local</label>
-              <input type="text" name="local" class="form-control">
+              <input type="text" name="local" class="form-control" required>
             </div>
             <div class="input-group input-group-outline my-3">
               <label class="form-label">Local de confraternização | Pós jogo</label>

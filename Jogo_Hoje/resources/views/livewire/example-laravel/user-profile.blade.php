@@ -87,7 +87,7 @@
                         <div class="mb-3 col-md-6">
 
                             <label class="form-label">Localização</label>
-                            <input wire:model.lazy="user.location" name="location" type="text"  value=" {{ auth()->user()->location}}"  class="form-control border border-2 p-2">
+                            <input wire:model.lazy="user.location" name="location" type="text"  value=" {{ auth()->user()->location}}" class="form-control border border-2 p-2">
                             @error('usuário.localização')
                             <p class='text-danger inputerror'>{{ $message }} </p>
                             @enderror

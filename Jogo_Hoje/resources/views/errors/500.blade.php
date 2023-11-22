@@ -103,8 +103,8 @@
         <div class="row">
           <div class="col-md-12">
             <h1 class="title text-light">500</h1>
-            <h2 class="text-light">Server Error </h2>
-            <h4 class="text-light">Ooooups! Looks like something went wrong</h4>
+            <h2 class="text-light">Erro de servidor! </h2>
+            <h4 class="text-light">Oooops! Parece que algo deu errado.</h4>
           </div>
         </div>
       </div>
@@ -116,9 +116,9 @@
                 © <script>
                   document.write(new Date().getFullYear())
                 </script>,
-                made with <i class="fa fa-heart" aria-hidden="true"></i> by
-                <a href="https://www.creative-tim.com" class="font-weight-bold text-white" target="_blank">Creative Tim & UPDIVISION</a>
-                for a better web.
+                made with <i class="fa fa-heart" aria-hidden="true"></i>
+                <a href="https://www.creative-tim.com" class="font-weight-bold text-white" target="_blank">quadrahoje@gmail.com</a>
+
               </div>
             </div>
             <div class="col-12 col-md-6">
