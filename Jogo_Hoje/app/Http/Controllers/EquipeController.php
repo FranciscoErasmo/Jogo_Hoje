@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Equipe;
+use App\Models\Atualizar;
 
 
 class EquipeController extends Controller
 {
     public function index()
     {
-        $equipes = Equipe::all();
+      
+       
         return view('equipe.index', compact('equipes'));   // Lógica para exibir todas as equipes
     }
 
@@ -31,6 +33,7 @@ class EquipeController extends Controller
     $equpe->timeb = $request->input('timeb');
     $equpe->confrat = $request->input('confrat');
     $equpe->local = $request->input('local');
+    $equpe->id_user = Auth()->user()->id;
     $equpe->data = $request->input('data');
     $equpe->horainicial = $request->input('horainicial');
     $equpe->horafinal = $request->input('horafinal');
@@ -65,13 +68,26 @@ public function editar($id)
     return view('livewire/example-laravel/equipes-editar', compact('equipe'));
 }
 
+
 public function atualizar(Request $request, $id)
 {
-    
 
-    // Redirecione para a página de detalhes após a atualização
-    return redirect( )->route('user-management');
+    $equpe =   Equipe::find($id);
+   
+    $equpe->modalidade = $request->input('modalidade');
+    $equpe->status = $request->input('status');
+    $equpe->capitao = $request->input('capitao');
+    $equpe->timea = $request->input('timea');
+    $equpe->timeb = $request->input('timeb');
+    $equpe->confrat = $request->input('confrat');
+    $equpe->local = $request->input('local');
+    $equpe->data = $request->input('data');
+    $equpe->horainicial = $request->input('horainicial');
+    $equpe->horafinal = $request->input('horafinal');
+    $equpe->checkbox = $request->input('checkbox');
+    $equpe ->update();
 
+    return redirect('/user-management')->with('success', 'Equipe criada com sucesso!');
+}
 }
 
-}

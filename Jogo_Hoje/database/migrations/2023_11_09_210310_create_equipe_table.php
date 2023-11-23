@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('timeb')->nullable();
             $table->string('confrat')->nullable();
             $table->string('local');
+            $table->integer('id_user');
             $table->string('horainicial');
             $table->string('horafinal');
             $table->string('checkbox');

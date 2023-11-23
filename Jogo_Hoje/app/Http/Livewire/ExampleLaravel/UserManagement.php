@@ -10,9 +10,11 @@ class UserManagement extends Component
 {
     public function render()
     {
-        $equipe = Equipe::all();
+        $id =Auth()->user()->id;
+        $equipe = Equipe::where('id_user',$id)->get();
         return view('livewire.example-laravel.user-management' ,compact('equipe'));
-    }
 
-    
+        $equipe = Equipe::all();
+        return view('livewire.example-laravel.dashboard' ,compact('equipe'));
+    }
 }
