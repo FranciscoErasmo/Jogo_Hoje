@@ -61,6 +61,7 @@ Route::post('/equipes/atualizar/{id}', [EquipeController::class, 'atualizar'])->
 
 
 
+
 Route::group(['middleware' => 'auth'], function () {
 Route::get('dashboard', Dashboard::class)->name('dashboard');
 Route::get('billing', Billing::class)->name('billing');

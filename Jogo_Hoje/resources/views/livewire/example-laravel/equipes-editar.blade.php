@@ -36,15 +36,7 @@
               <label class="form-label">Capitão/Administrador</label>
               <input type="text" name="capitao"  class="form-control" value={{$equipe->capitao}}>
              
-            </div>
-            <div class="input-group input-group-outline my-3">
-                <label class="form-label">Time A</label>
-                <input type="text" name="timea" class="form-control" value={{$equipe->timea}}>
-              </div>
-            <div class="input-group input-group-outline my-3">
-                <label class="form-label">Time B</label>
-                <input type="text" name="timeb" class="form-control" value={{$equipe->timeb}}>
-              </div>
+
             <div class="input-group input-group-outline my-3">
               <label class="form-label">Local</label>
               <input type="text" name="local" class="form-control" value={{$equipe->local}}>

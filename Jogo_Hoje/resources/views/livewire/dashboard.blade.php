@@ -56,8 +56,8 @@
               </div>
       
             
-              <a href="{{route('equipes-editar',$equipe->id)}}"> <button type="submit" class="btn btn-icon bg-gradient-dark d-lg-block mt-3 mb-0">Inscrever-se</button></a>
-          
+              <button type="button" class="btn btn-block btn-light mb-3" data-bs-toggle="modal" data-bs-target="#modal-form">Inscrever-se</button>
+              
               </a>
             </div>
           </div>
@@ -65,3 +65,36 @@
         @endforeach
     </tbody>
 </table>
+<div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div class="card card-plain">
+          <div class="card-header pb-0 text-left">
+            <h5 class="">Insira os jogadores</h5>
+            <p class="mb-0">Escolha um time e insira o nome do jogador</p>
+          </div>
+          <div class="card-body">
+            <form role="form text-left">
+              <select class="form-control" name="choices-button" id="choices-button" placeholder="Departure">
+                <option value="Choice 1" selected="">Time A</option>
+                <option value="Choice 2">Time B</option>
+              </select>
+              <div class="input-group input-group-outline my-3">
+                <label class="form-label">Nome do Jogador</label>
+                <input type="password" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)">
+              </div>
+
+              <div class="text-center">
+                <button type="button" class="btn btn-round bg-gradient-info btn-lg w-100 mt-4 mb-0">Enviar</button>
+              </div>
+            </form>
+          </div>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

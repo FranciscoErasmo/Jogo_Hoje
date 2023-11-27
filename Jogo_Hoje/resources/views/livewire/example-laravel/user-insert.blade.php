@@ -38,6 +38,7 @@
                 <label class="form-label">Time A</label>
                 <input type="text" name="timea" class="form-control">
               </div>
+              
             <div class="input-group input-group-outline my-3">
                 <label class="form-label">Time B</label>
                 <input type="text" name="timeb" class="form-control">
