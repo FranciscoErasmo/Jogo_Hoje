@@ -14,7 +14,7 @@
 
          
               <label class="form-label"> <h4>Modalidade<h4>
-                <select name= "modalidade" id="inputState" class="form-control" data-gtm-form-interact-field-id="0">
+                <select name= "modalidade" id="inputState" class="form-control" data-gtm-form-interact-field-id="0" placeholder="Departure">
                   <option value="Vôlei" selected ="">Vôlei</option>
                   <option value="Basquete">Basquete</option>
                   <option value="Beach tennis">Beach Tennis</option>
@@ -52,7 +52,7 @@
               <input type="text" name="confrat" class="form-control">
             </div>
             <label for="data">Data:</label>
-            <input type="date" id="data" name="data" required>
+            <input type="datetime-local" id="data" name="data" required>
             <div class="input-group input-group-outline my-3"> 
 
              <label for="hora">Hora inicial:</label>
@@ -60,13 +60,13 @@
 
              <label for="hora">Hora de término:</label>
         <input type="time" id="hora" name="horafinal" required>
-
+              <br>
             <div class="form-check">
               <input class="form-check-input" name="checkbox" type="checkbox" id="flexCheckDefault" required>
             <label class="form-check-label" for="flexCheckDefault">Estou ciente de que o tempo de uso da quadra não deve ser superior a 4 horas por agendamento público, e 3 horas por agendamento privado
             </label>
-                
             </div>
+            <br>
             <button type="submit" class="btn btn-primary btn-lg w-100">Formar Equipe</button>
           </form>
         </div>

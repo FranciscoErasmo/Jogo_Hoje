@@ -26,18 +26,19 @@
                                           <br>
                               <div style="position:absolute; left:76%; top:18%">
                               
-                                <button type="button" class="btn btn-block btn-light mb-3" data-bs-toggle="modal" data-bs-target="#modal-form">Inserir</button>
+
+                                <button type="button" class="btn btn-block btn-light mb-3" data-bs-toggle="modal" data-bs-target="#modal-form" data-id="{{$equipe->id}}">Inserir</button>
                               </div>
                               
 
                               <div style="position:absolute; left:40%; top:18%">
                               
-                                <button type="button" class="btn bg-gradient-secondary btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Integrantes" 
+                                <button type="button" class="btn bg-gradient-secondary btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{$equipe->jogadores_timeA}}" 
                                 data-container="body" data-animation="true">Time A</button>
                               </div>
                               <div style="position:absolute; left:58%; top:18%">
 
-                              <button type="button" class="btn bg-gradient-secondary btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Integrantes" 
+                              <button type="button" class="btn bg-gradient-secondary btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="bottom" title="{{$equipe->jogadores_timeB}}" 
                               data-container="body" data-animation="true">Time B</button>
                             </div>
                                           <div style="width: 65% ;position:absolute; left:30%; top:6%">
@@ -95,35 +96,53 @@
                                 <div class="card card-plain">
                                   <div class="card-header pb-0 text-left">
                                     <h5 class="">Insira os jogadores</h5>
-                                    <p class="mb-0">Escolha um time e insira o nome do jogador</p>
+                                    <p id="modal-id-placeholder" class="mb-0">Escolha um time e insira o nome do jogador </p>
                                   </div>
                                   <div class="card-body">
-                                    <form role="form text-left">
-                                      <select class="form-control" name="choices-button" id="choices-button" placeholder="Departure">
-                                        <option value="Choice 1" selected="">Time A</option>
-                                        <option value="Choice 2">Time B</option>
+                                    <form role="form text-left" action="{{route('inserir-jogador')}}" method="POST">
+                                      @csrf
+                                    
+                                      <input type="hidden" class="form-control" name="id_jogo" value="{{$equipe->id}}">
+                                      <br>
+                                      <select class="form-control" name="time" id="choices-button" placeholder="Departure">
+                                        <option value="Time A" selected="">Time A</option>
+                                        <option value="Time B">Time B</option>
                                       </select>
                                       <div class="input-group input-group-outline my-3">
+                                       
                                         <label class="form-label">Nome do Jogador</label>
-                                        <input type="password" class="form-control" onfocus="focused(this)" onfocusout="defocused(this)">
+                                  
+                                        <input type="text" class="form-control" name="nome_do_jogador" onfocus="focused(this)" onfocusout="defocused(this)">
                                       </div>
- 
+                        
                                       <div class="text-center">
-                                        <button type="button" class="btn btn-round bg-gradient-info btn-lg w-100 mt-4 mb-0">Enviar</button>
+                                        <button type="submit" class="btn btn-round bg-gradient-info btn-lg w-100 mt-4 mb-0">Enviar</button>
                                       </div>
                                     </form>
-                                  </div>
-
-                                    </p>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
+                        
                       </div>
                     </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+      <script>
+  $('#modal-form').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget); // Botão que acionou o modal
+    var id = button.data('id'); // Extrai a informação do atributo data-id
+
+    var modal = $(this);
+    var originalText = 'Escolha um time e insira o nome do jogador ';
+    modal.find('#modal-id-placeholder').text(originalText + 'ID: ' + id);
+  });
+</script>
+
+        
+        

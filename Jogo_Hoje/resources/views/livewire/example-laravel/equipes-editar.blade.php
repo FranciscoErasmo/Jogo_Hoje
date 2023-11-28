@@ -10,7 +10,7 @@
        <div class="center-h1">
           <form action="{{route('equipes.atualizar',$equipe->id)}}"  method="post">
               @csrf
-              <h1 style="text-align: center;">Nova Equipe</h1>
+              <h1 style="text-align: center;">Editar Equipe</h1>
 
          
               <label class="form-label"> <h4>Modalidade<h4>

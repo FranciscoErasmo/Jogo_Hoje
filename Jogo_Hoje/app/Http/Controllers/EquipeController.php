@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Equipe;
-use App\Models\Atualizar;
+use App\Models\Jogador;
 
 
 class EquipeController extends Controller
@@ -88,6 +88,16 @@ public function atualizar(Request $request, $id)
     $equpe ->update();
 
     return redirect('/user-management')->with('success', 'Equipe criada com sucesso!');
+}
+public function inserir(Request $request)
+{
+    $jogador =  new Jogador();
+    $jogador->id_jogo= $request->input('id_jogo');
+    $jogador->time= $request->input('time');
+    $jogador->nome_do_jogador = $request->input('nome_do_jogador');
+    $jogador->save();
+
+    return redirect('dashboard')->with('success', 'Jogador adicionado com sucesso!');
 }
 }
 

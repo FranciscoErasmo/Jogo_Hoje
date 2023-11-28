@@ -50,15 +50,16 @@ Route::get('/equipe', [EquipeController::class, 'index']);
 
 Route::post('/equipe/store', [EquipeController::class,'store'])->middleware('auth')->name('store');
 
-
+Route::get('userinsert', UserInsert::class)->middleware('auth')->name('user-insert');
 Route::get('user-management', UserManagement::class)->middleware('auth')->name('user-management');
-Route::get('userinsert', [UserInsert::class,'userinsert'])->middleware('auth')->name('user-insert');
+
 
 Route::get('/equipe/{id}', [EquipeController::class,'destroy'])->middleware('auth')->name('equipe.destroy');
 Route::get('/equipe', [EquipeController::class,'index'])->name('equipe.index');
 Route::get('/equipes/editar/{id}', [EquipeController::class, 'editar'])->middleware('auth')->name('equipes-editar');
 Route::post('/equipes/atualizar/{id}', [EquipeController::class, 'atualizar'])->name('equipes.atualizar');
 
+Route::post('inserir-jogador', [EquipeController::Class, 'inserir'])->middleware('auth')->name('inserir-jogador');
 
 
 
